@@ -14,5 +14,5 @@ npm run dev
 ```
 
 ### prevew
-- ![imagepreview]('./src/assets/preview.png')
+- ![imagepreview](src/assets/preview.png)
 
