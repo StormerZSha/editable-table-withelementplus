@@ -1,7 +1,7 @@
 <template>
     <div class="editableTable">
         <div class="tableTop">
-            <div class="addbtn">Add</div>
+            <el-button  type="primary" >Add</el-button>
         </div>
         <div class="tableContainer">
             <el-table
@@ -27,8 +27,46 @@
     </div>
 </template>
 <script setup>
-
+import {ref} from 'vue'
+let tableData=ref([
+   {
+    name: 'Tom',
+    state: 'California',
+    city: 'Los Angeles',
+    address: 'No. 189, Grove St, Los Angeles',
+    zip: 'CA 90036',
+  },
+  {
+    name: 'Tom',
+    state: 'California',
+    city: 'Los Angeles',
+    address: 'No. 189, Grove St, Los Angeles',
+    zip: 'CA 90036',
+  },
+  {
+    name: 'Tom',
+    state: 'California',
+    city: 'Los Angeles',
+    address: 'No. 189, Grove St, Los Angeles',
+    zip: 'CA 90036',
+  },
+  {
+    name: 'Tom',
+    state: 'California',
+    city: 'Los Angeles',
+    address: 'No. 189, Grove St, Los Angeles',
+    zip: 'CA 90036',
+  }   
+])
+let tableKey=ref(0)
 </script>
-<style>
-
+<style lang="scss">
+.editableTable{
+    .tableTop{
+        width: 100%;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 </style>
